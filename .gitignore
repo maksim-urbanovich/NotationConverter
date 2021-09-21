@@ -1,2 +1,16 @@
 # Project exclude paths
-/out/
+.gradle
+.classpath
+.project
+.idea
+*.iml
+target
+bin
+.settings
+out
+tmp
+/build
+.springBeans
+/.project
+/.classpath
+rebel.xml
