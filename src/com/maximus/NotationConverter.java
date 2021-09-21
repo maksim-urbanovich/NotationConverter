@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class NotationConverter {
 
-    public class InvalidValueException extends Exception {
+    public class InvalidValueException extends RuntimeException {
         public InvalidValueException(String message) {
             super(message);
         }
@@ -55,7 +55,6 @@ public class NotationConverter {
             System.out.println(new NotationConverter().toArabic("MCMXLI"));
             System.out.println(new NotationConverter().toArabic("XIX"));
             System.out.println(new NotationConverter().toArabic("K"));
-
         }
         catch (InvalidValueException e) {
             System.out.println("InvalidValueException: " + e.getMessage());
